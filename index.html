@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+
+    <div class="upper">
+
+      <div class="g-day">
+        <p>DAY</p>
+        <input min="1" max="31"  placeholder="DD" id="day" oninput="getdvalue()">
+        <p id="p1"></p>
+      </div>
+
+      <div class="g-month">
+        <p>MONTH</p>
+        <input min="1" max="12" type="text" placeholder="MM" id="month" oninput="getmvalue()">
+        <p id="p2"></p>
+      </div>
+
+      <div class="g-year">
+        <p>YEAR</p>
+        <input type="text" placeholder="YYYY" id="year" oninput="getyvalue()">
+        <p id="p3"></p>
+      </div>
+
+    </div >
+    <div class="middle">
+      <hr>
+      <img src="assets/images/icon-arrow.svg" alt="" class="arrow" onclick="calculate()">
+    </div>
+      
+    <div class="lower">
+    <div class="l-years"><span id="yy">--</span>years</div>
+    <div class="l-month"><span id="mm">--</span>months</div>
+    <div class="l-day"><span id="dd">--</span>days</div>
+  </div>
+
+
+
+  </div>
+    
+      
+
+ 
+    <script src="index.js"></script>
+</body>
+</html>
